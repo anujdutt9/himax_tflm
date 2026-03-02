@@ -31,7 +31,7 @@ extern hx_drv_sensor_image_config_t g_pimg_config;
 // At 115200 baud, a 15 KB JPEG encodes to ~20 KB base64 => ~1.7 s per frame.
 // Increase STREAM_EVERY_N to get more frequent score updates.
 #ifndef STREAM_EVERY_N
-#define STREAM_EVERY_N 3
+#define STREAM_EVERY_N 1
 #endif
 
 static int g_frame_counter = 0;
