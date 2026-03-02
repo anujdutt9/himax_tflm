@@ -23,7 +23,7 @@ jobs:
           make flash example=person_detection_int8
 
       - name: Upload firmware artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: person_detection_camera
           path: "*.img"
