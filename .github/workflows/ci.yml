@@ -16,9 +16,9 @@ jobs:
       - name: Build
         run: |
           make download
-          curl -Ls -f https://github.com/foss-for-synopsys-dwc-arc-processors/toolchain/releases/download/arc-2021.09-release/arc_gnu_2021.09_prebuilt_elf32_le_linux_install.tar.gz -o arc_gnu.tar.gz
+          curl -Ls https://github.com/foss-for-synopsys-dwc-arc-processors/toolchain/releases/download/arc-2020.09-release/arc_gnu_2020.09_prebuilt_elf32_le_linux_install.tar.gz -o arc_gnu.tar.gz
           tar xf arc_gnu.tar.gz
-          export PATH=/home/runner/work/himax_tflm/himax_tflm/arc_gnu_2021.09_prebuilt_elf32_le_linux_install/bin:$PATH
+          export PATH=/home/runner/work/himax_tflm/himax_tflm/arc_gnu_2020.09_prebuilt_elf32_le_linux_install/bin:$PATH
           make person_detection_int8
           make flash example=person_detection_int8
 
